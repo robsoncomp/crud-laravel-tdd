@@ -21,6 +21,8 @@ Criar DataBase TDD: tdd_escola
 
 Comando para executar os migrations: php artisan migrate
 
+Comando para popular os dados: php artisan db:seed --class=AlunosSeeder
+
 Comando para executar todos os tests: vendor/bin/phpunit
 
 Comando para iniciar a aplicação: php artisan serve
