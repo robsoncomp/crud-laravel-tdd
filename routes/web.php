@@ -17,10 +17,8 @@ Route::get('/', function () {
 
 Route::resource('alunos','AlunoController');
 
-Route::group(['prefix' => 'alunos'], function() {
-    Route::get('/', 'AlunoController@index')->name('alunos');
-    Route::get('/{aluno}', 'AlunoController@show')->name('alunos.show');
-    Route::post('/', 'AlunoController@store')->name('alunos.store');
-    Route::put('/{aluno}', 'AlunoController@update')->name('alunos.update');
-    Route::delete('/{post}', 'AlunoController@delete')->name('alunos.delete');
-});
+//  Route::get('/alunos', 'AlunoController@index');
+// Route::post('/alunos/create','AlunoController@store');
+// Route::put('/alunos/{aluno}','AlunoController@update');
+// Route::delete('/alunos.delete/{aluno}','AlunoController@destroy');
+// Route::post('/alunos.destroy/{aluno}','AlunoController@destroy');
